@@ -1,0 +1,8 @@
+telethon
+google-generativeai
+flask
+flask-socketio
+jdatetime
+psycopg2-binary
+python-dotenv
+gunicorn
