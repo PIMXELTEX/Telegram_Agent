@@ -205,7 +205,7 @@ async def main():
     print("Starting the Telegram agent...")
     if not os.path.exists(PROFILE_PICS_PATH):
         os.makedirs(PROFILE_PICS_PATH)
-    await client.start()
+    await client.start(phone=os.environ.get('PHONE'))
     print("Client started. Listening for messages...")
     await client.run_until_disconnected()
 
